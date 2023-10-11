@@ -8,6 +8,8 @@ module.exports = {
   entry: {
     popup: path.resolve('src/popup/popup.tsx'),
     options: path.resolve('src/options/options.tsx'),
+    background: path.resolve('src/background/background.ts'),
+    contentScript: path.resolve('src/contentScript/contentScript.ts'),
   },
   module: {
     rules: [
@@ -23,7 +25,7 @@ module.exports = {
       {
         type: 'asset/resource',
         test: /\.(jpg|jpeg|png|woff|woff2|eot|ttf|svg)$/,
-      }
+      },
     ],
   },
   plugins: [
@@ -46,9 +48,9 @@ module.exports = {
   },
   optimization: {
     splitChunks: {
-      chunks: 'all'
-    }
-  }
+      chunks: 'all',
+    },
+  },
 };
 
 function getHtmlPlugins(chunks) {

@@ -11,3 +11,4 @@ const test = <img src="icon.png" alt="" />;
 
 
 rootElement.render(test); 
+
