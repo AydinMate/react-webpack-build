@@ -1,20 +1,21 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import '@/styles/tailwind.css';
-import '@/options/options.css';
+import '../styles/tailwind.css';
+
+import './options.css';
 import { Button } from '@/components/ui/button';
+
+const Options: React.FC<{}> = () => {
+  return (
+    <div>
+      <Button variant='destructive' className='font-bold'>Options</Button>
+    </div>
+  );
+}
 
 const root = document.createElement('div');
 document.body.appendChild(root);
 
-const rootElement = createRoot(root);
+const container = createRoot(root);
 
-const options = (
-  <div>
-    <h1>Title</h1>
-    <h2 className="text-blue-400">Sub</h2>
-    <Button>Options buttion</Button>
-  </div>
-);
-
-rootElement.render(options);
+container.render(<Options />);

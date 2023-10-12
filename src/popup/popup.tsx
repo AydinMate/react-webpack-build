@@ -4,18 +4,17 @@ import '@/popup/popup.css';
 import '@/styles/tailwind.css';
 import { Button } from '@/components/ui/button';
 
+const Popup: React.FC<{}> = () => {
+  return (
+    <div>
+      <Button>Hi yo</Button>
+    </div>
+  );
+}
+
 const root = document.createElement('div');
 document.body.appendChild(root);
 
-const rootElement = createRoot(root);
+const container = createRoot(root);
 
-const popup = (
-  <div className='flex flex-col'>
-    <Button variant="ghost" className="">
-      Buttonsss
-    </Button>
-    <Button variant='destructive'>Cancel</Button>
-  </div>
-);
-
-rootElement.render(popup);
+container.render(<Popup />);
