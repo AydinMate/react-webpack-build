@@ -1,8 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import '../styles/tailwind.css';
-
-import './options.css';
+import '@/styles/tailwind.css';
+import '@/options/options.css';
 import { Button } from '@/components/ui/button';
 
 const root = document.createElement('div');
