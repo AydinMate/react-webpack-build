@@ -54,7 +54,12 @@ module.exports = {
   ],
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
-  },
+    alias: {
+      '@': path.resolve(__dirname),  // this points to the root directory of the project
+    },
+},
+
+
   output: {
     filename: '[name].js',
     path: path.resolve('dist'),
