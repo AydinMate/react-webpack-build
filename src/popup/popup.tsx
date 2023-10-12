@@ -2,7 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './popup.css';
 import '../styles/tailwind.css';
-import { Button } from '@/src/components/ui/button';
+import { Button } from '@/components/ui/button';
 
 const root = document.createElement('div');
 document.body.appendChild(root);

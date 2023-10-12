@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import '../styles/tailwind.css';
 
 import './options.css';
-import { Button } from '@/src/components/ui/button';
+import { Button } from '@/components/ui/button';
 
 const root = document.createElement('div');
 document.body.appendChild(root);
